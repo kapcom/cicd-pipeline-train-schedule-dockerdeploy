@@ -19,7 +19,7 @@ pipeline {
                         sh 'echo $(curl localhost:8080)'
                     }
                 }
-            }        
+            }
         }
         stage('Push Docker Image') {
             when {
@@ -33,6 +33,6 @@ pipeline {
                     }
                 }
             }
-        }        
+        }      
     }
 }
